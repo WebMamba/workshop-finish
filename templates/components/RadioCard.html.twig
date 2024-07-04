@@ -1,0 +1,15 @@
+<div
+        class="
+        transition ease-in-out delay-150 hover:-translate-y-1
+        hover:scale-110 duration-300 aspect-square relative overflow-hidden
+        rounded-lg bg-white/50 shadow-lg transition duration-300
+        ease-in-out hover:shadow-2xl p-4"
+        role="listbox"
+        data-controller="radio"
+        data-radio-source-value="{{ radio.url }}"
+        data-radio-stream-value="{{ path('app_home_playerstream', {radio: radio.id}) }}"
+        data-action="click->radio#toggle"
+>
+    {% block content %}
+    {% endblock %}
+</div>

@@ -1,0 +1,19 @@
+<nav class="flex justify-between items-center text-slate-50">
+    <a href="{{ path('app_home_index') }}" class="Navbar__logo">
+        <em>S</em>ymfony <em>FM</em>
+    </a>
+
+    <ul class="flex gap-8 justify-center font-mono text-lg font-bold">
+        <li>
+            <twig:NavBarItem icon="radios" label="Radios" path="{{ path('app_home_index') }}"/>
+        </li>
+        <li>
+            <twig:NavBarItem icon="heart" label="Genre" path="{{ path('app_home_genres') }}"/>
+        </li>
+        <li>
+            <twig:NavBarItem icon="calendar" label="Années" path="{{ path('app_home_years') }}"/>
+        </li>
+    </ul>
+
+    <div></div>
+</nav>

@@ -1,0 +1,6 @@
+{% props label, path, icon %}
+
+<a data-turbo-action="replace" href="{{ path }}" class="text-slate-50 hover:bg-slate-200/50 flex gap-2 justify-center items-center rounded-lg pt-2 pb-2 pl-4 pr-4">
+    <twig:UX:Icon name="{{ icon }}" class="text-slate-50" style="color: black; opacity: .9; fill: none"/>
+    <span class="uppercase">{{ label }}</span>
+</a>

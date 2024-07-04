@@ -1,0 +1,21 @@
+<div
+        data-controller="player"
+        data-action="radio:playRadio@window->player#play radio:pauseRadio@window->player#pause"
+        class="fixed bottom-0 left-0 w-full h-20 bg-slate-800/90 drop-shadow-lg shadow-cyan-500/50 shadow-[10px_-1px_20px_2px_#00000024] flex justify-between">
+    <div class="flex items-center gap-2" id="player-radio">
+        <img class="h-full w-auto rounded" src="https://via.placeholder.com/50" alt="logo de la radio">
+        <div>
+            <p class="text-xl font-bold">Nom de la radio</p>
+            <p class="text-slate-400">Nom de la chanson en cour</p>
+        </div>
+    </div>
+    <div class="flex justify-center items-center absolute md:top-1/2 sm:left-2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <twig:PlayerButton/>
+    </div>
+    <div class="hidden">
+        <audio controls data-player-target="audio">
+            <source data-player-target="source" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{% props logo, radio, color %}
+
+<div
+        class="absolute inset-0 bg-cover"
+        style="background-color: {{ '#'~color }};">
+    <img
+            class="w-full h-full object-cover self-center blur"
+            src="{{ logo }}" alt="{{ radio }}"
+            style="width: 100%; height: auto; display: block;position: absolute;"
+    />
+</div>

@@ -1,0 +1,11 @@
+<turbo-stream action="replace" target="player-radio">
+    <template>
+        <div class="flex items-center gap-2" id="player-radio">
+            <img class="h-full w-auto rounded" src="{{ song.image }}" alt="{{ song.title }}">
+            <div>
+                <p class="text-xl font-bold">{{ song.title }}</p>
+                <p class="text-slate-400">{{ song.artist }}</p>
+            </div>
+        </div>
+    </template>
+</turbo-stream>
